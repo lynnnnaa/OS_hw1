@@ -31,9 +31,8 @@ split( const std::string & p_line)
 }
 
 // reads in a line from STDIN
-// reads until newline or EOF,
-// returns an empty string if EOF is hit immediately
-// result includes "\n" if present
+// reads until \n or EOF and result includes \n if present
+// returns empty string on EOF
 std::string
 stdin_readline()
 {

@@ -12,6 +12,6 @@ def main():
                 continue
             if word == word[::-1]:
                 max_pali = word
-    print(f"Largest palindrome: {max_pali}")
+    print(f"Longest palindrome: {max_pali}")
 
 main()

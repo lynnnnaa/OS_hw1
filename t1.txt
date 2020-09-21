@@ -1,3 +1,7 @@
-hello world
+Hello,
 
-there are no palindromes here
+There are no palindromes here.
+
+Sincerely,
+
+The Author

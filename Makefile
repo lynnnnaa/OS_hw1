@@ -9,5 +9,5 @@ fast-pali: fast-pali.cpp
 	g++ -O2 -Wall fast-pali.cpp -o fast-pali
 
 clean:
-	-/bin/rm -f slow-pali fast-pali *.o *.~
+	-/bin/rm -f slow-pali fast-pali *.o *~
 

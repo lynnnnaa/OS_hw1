@@ -4,8 +4,8 @@ def main():
     max_pali = ""
     while True:
         line = sys.stdin.readline()
-        line = line.lower()
         if len(line) == 0: break
+        line = line.lower()
         words = line.split()
         for word in words:
             if len(word) <= len(max_pali):

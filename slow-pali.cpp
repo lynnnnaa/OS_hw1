@@ -4,6 +4,7 @@
 #include <ctype.h>
 #include <string>
 #include <vector>
+#include <iostream>
 
 // split string p_line into a vector of strings (words)
 // the delimiters are 1 or more whitespaces
@@ -40,6 +41,7 @@ stdin_readline()
 {
   std::string result;
   while( 1 == read( STDIN_FILENO, & buffer, 1)) {
+
     result.push_back(buffer);
     if( buffer == '\n') break;
   }
@@ -71,7 +73,7 @@ get_longest_palindrome()
   while(1) {
     std::string line = stdin_readline();
     if( line.size() == 0) break;
-    auto words = split( line);
+    auto words = split(line);
     for( auto word : words) {
       if( word.size() <= max_pali.size()) continue;
       if( is_palindrome(word))
@@ -88,4 +90,3 @@ main()
   printf("Longest palindrome: %s\n", max_pali.c_str());
   return 0;
 }
-
